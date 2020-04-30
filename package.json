@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --config ./webpack.config.js",
     "build": "webpack "
   },
-  "keywords": [],
+  "keywords": ["typescript","webpack","antd","redux","redux-thunk"],
   "author": "",
   "license": "ISC",
   "devDependencies": {

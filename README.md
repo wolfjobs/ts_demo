@@ -1,2 +1,3 @@
 # ts_demo
-typescript/webpack/antd/redux/redux-thunk
+
+created by typescript & webpack & antd & redux & redux-thunk

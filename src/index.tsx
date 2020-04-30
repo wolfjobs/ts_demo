@@ -9,5 +9,5 @@ ReactDOM.render(
   <Provider store={CONFIGURE_STORE()}>
     <Hello />
   </Provider>,
-  document.getElementById("example")
+  document.getElementById("root")
 );
