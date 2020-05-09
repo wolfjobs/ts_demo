@@ -7,24 +7,28 @@ import {connect} from "react-redux";
 import {Dispatch} from "redux";
 import {I_state} from "./store/reducer";
 
-
-export interface HelloProps {
-  home: { count: number },
+export interface Props {
+  home: any,
   onPlus?: () => void,
   onMinus?: () => void,
 }
 
-const Hello = ({home, onPlus, onMinus}: HelloProps) => (
-  <Fragment>
-    <div style={{textAlign: "center"}}>
-      <h2>{home.count}</h2>
-      <Button.Group>
-        <Button type={"primary"} icon={<PlusOutlined/>} onClick={onPlus}/>
-        <Button type={"default"} icon={<MinusOutlined/>} onClick={onMinus}/>
-      </Button.Group>
-    </div>
-  </Fragment>
-);
+const Hello = ({home, onPlus, onMinus}: Props) => {
+
+  return (
+    <Fragment>
+      <div style={{textAlign: "center"}}>
+        <h1 style={{marginRight: "10em"}}>{document.title}</h1>
+        <h2>TS 加减计数器</h2>
+        <h2>{home.count}</h2>
+        <Button.Group>
+          <Button type={"primary"} icon={<PlusOutlined/>} onClick={onPlus}/>
+          <Button type={"default"} icon={<MinusOutlined/>} onClick={onMinus}/>
+        </Button.Group>
+      </div>
+    </Fragment>
+  );
+}
 
 
 export const mapStateToProps = (state: any) => ({

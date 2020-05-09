@@ -5,7 +5,7 @@
  * @name reducers
  * @description
  */
-import {HomeReducer} from "../pages/Home/store/reducer";
+import {HomeReducer} from "../pages/Hello/store/reducer";
 import { combineReducers } from "redux";
 
 
